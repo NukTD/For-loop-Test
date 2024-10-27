@@ -13,15 +13,15 @@
 // 4. การแสดงผลลัพท์
 
 let n = 10;
-let sum = 0;
-function evenNumbers (numbers){
-    for (let i = 0; i <= numbers; i++){
-        if(i % 2 === 0){
-            sum += i
-        }
+function evenNumbers(numbers) {
+  let sum = 0;
+  for (let i = 0; i <= numbers; i++) {
+    if (i % 2 === 0) {
+      sum += i;
     }
-    return sum
+  }
+  return sum;
 }
 
-let result = evenNumbers(n)
+let result = evenNumbers(n);
 console.log(result);

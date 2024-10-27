@@ -19,17 +19,20 @@
 // 5. การแสดงผลลัพท์
 
 let targetNum = 4;
-function numGreaterThanTarget (numbers){
+function numGreaterThanTarget (numbers, target){
     let count = 0;
     for(let i = 0; i < numbers.length; i++){
-        if(numbers[i] > targetNum){
+        if(numbers[i] > target){
+
             count++;
         }
+        console.log(i);
+        
     }
     return count;
 }
 
 let arrNum = [1, 3, 5, 7, 9]
-let result = numGreaterThanTarget(arrNum)
+let result = numGreaterThanTarget(arrNum, 5)
 console.log(result);
 

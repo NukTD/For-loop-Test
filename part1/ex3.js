@@ -14,7 +14,7 @@
 
 let inputArray = [3, 5, 7, 2, 8];
 function findMaxNumber (numbers){
-    let maxNum = inputArray[0];
+    let maxNum = numbers[0];
     for(let i =0; i < numbers.length; i++){
         if(numbers[i] > maxNum){
             maxNum = numbers[i]
@@ -26,3 +26,5 @@ function findMaxNumber (numbers){
 
 let result = findMaxNumber(inputArray)
 console.log(result);
+console.log(findMaxNumber([1, 2]));
+
